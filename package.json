@@ -1,24 +1,24 @@
 {
-  "name": "expressboilerplate",
+  "name": "developerhangoutsite",
   "version": "1.0.0",
-  "description": "express stater boilerplate",
+  "description": "website for the developer hangout discord",
   "main": "index.js",
   "scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "nodemon index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "keywords": [
-    "express",
-    "boilerplate"
+    "developer",
+    "hangout"
   ],
-  "author": "Erin Rivas",
+  "author": "Karnthis",
   "license": "MIT",
   "dependencies": {
-		"express": "*",
-		"dotenv": "*",
-		"cors": "*",
-		"body-parser": "*",
-		"mongoose": "*"		
+    "express": "*",
+    "dotenv": "*",
+    "cors": "*",
+    "body-parser": "*",
+    "mongoose": "*"
   },
   "devDependencies": {
     "nodemon": "*"
