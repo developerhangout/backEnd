@@ -92,14 +92,14 @@ app.post('/project/add', (req, res) => {
 	console.log(req.body)
 	let project = new Projects();
 	Object.assign(project, req.body);
-  project.save((err) => {
-    if (err) {
+	project.save((err) => {
+		if (err) {
 			console.log(err)
-      res.status(404).send(err);
-    } else {
-      res.status(200).send('success');
-    }
-  	return;
+			res.status(404).send(err);
+		} else {
+			res.status(200).send('success');
+		}
+		return;
 	});
 });
 
@@ -108,14 +108,14 @@ app.post('/application/add', (req, res) => {
 	console.log(req.body)
 	let application = new Applications();
 	Object.assign(application, req.body);
-  application.save((err) => {
-    if (err) {
+	application.save((err) => {
+		if (err) {
 			console.log(err)
-      res.status(404).send(err);
-    } else {
-      res.status(200).send('success');
-    }
-  	return;
+			res.status(404).send(err);
+		} else {
+			res.status(200).send('success');
+		}
+		return;
 	});
 });
 
@@ -128,5 +128,5 @@ if (process.env.IS_PROD === 'true') {
 }
 
 app.listen(port, () => {
-  console.log(`Server listening on port: ${port}`);
+	console.log(`Server listening on port: ${port}`);
 });
